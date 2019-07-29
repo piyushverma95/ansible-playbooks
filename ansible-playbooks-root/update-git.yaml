@@ -1,0 +1,6 @@
+- hosts: web
+  tasks:
+    - name: Pinging Target
+      ping:
+    - name: Updating Git
+      yum: name=git state=latest update_only=on

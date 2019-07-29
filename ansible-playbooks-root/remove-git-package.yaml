@@ -1,0 +1,7 @@
+- hosts: web
+  tasks: 
+    - name: Pinging Web Server
+      ping:
+    - name: Remove Git Package
+      become: true
+      yum: name=git state=removed

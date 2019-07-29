@@ -1,0 +1,7 @@
+---
+- hosts: web
+  become: true
+  tasks:
+    - name: Ping Test Ansible
+      ping:
+    - yum: name=git state=present update_cache=yes
